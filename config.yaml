@@ -1,4 +1,4 @@
-baseurl: /
+baseurl: 'https://housing-crisis.netlify.app/'
 languageCode: en-US
 title: A Hugo website
 theme: hugo-lithium
@@ -15,9 +15,9 @@ menu:
     - name: About
       url: /about/
     - name: GitHub
-      url: https://github.com/rstudio/blogdown
-    - name: Twitter
-      url: https://twitter.com/rstudio
+      url: https://github.com/rosiesun/first-hugo-blog
+    # - name: Twitter
+    #   url: https://twitter.com/rstudio
 params:
   MathJaxCDN: //cdnjs.cloudflare.com/ajax/libs
   MathJaxVersion: 2.7.5
