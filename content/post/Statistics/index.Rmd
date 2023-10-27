@@ -55,19 +55,15 @@ The debt to income ratio is an aggregate index which compares the total debt to 
 <https://www150.statcan.gc.ca/t1/tbl1/en/cv.action?pid=3810023801>
 
 ```{r}
-
 dat <- read.csv("~/housing data/debt_to_income_ratio.csv", header=FALSE)
-head(dat)
+
 
 dat <- as.data.frame(t(dat))
-head(dat)
 
 dat <- dat[-1, ]
 rownames(dat) <- NULL
-head(dat)
 
 names(dat) <- c("year_qt", "ratio")
-head(dat)
 
 dat <- dat %>% 
   separate(year_qt, c("quarter", "year")) %>%
